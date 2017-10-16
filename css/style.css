@@ -54,14 +54,25 @@ img{
     width: 100%;
 }
 
-.button-primary{
-    background: #05b9ec;
-    color: white;
-    padding: 12px 30px 12px 30px;
+.buttongeneral{
     border-radius: 3px;
     text-decoration: none;
+    font-size: 0.9em;
 }
 
+.button-primary{
+    padding: 7px 30px 7px 30px;
+    background: #05b9ec;
+    color: white;
+
+}
+
+.button-secondery{
+    padding: 5px 30px 5px 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
 
 /*  ====================== CSS responsável pelo menu principal ====================*/
 
@@ -108,7 +119,7 @@ img{
 .movierating__decimal{
     float: right;
     border: 1px solid;
-    padding: 1px 4px 1px 7px;
+    padding: 1px 4px 3px 7px;
     border-radius: 3px;
 }
 
@@ -144,7 +155,7 @@ img{
 
 .movieactions{
     margin-left: auto;
-    display: inline-block;
+    width: 350px;
 }
 
 .movieactions__nav{
@@ -153,6 +164,24 @@ img{
 
 .movieactions__nav--list{
 
+}
+
+.actionsusers{
+    float: right;
+    margin: 5px;
+    color: white;
+}
+
+.actionsusers:last-child::before{
+    content: "+";
+    font-size: 15px;
+    color: white;
+}
+
+.actionsusers a:last-child{
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.9em;
 }
 
 /*  ====================== CSS responsável pela seção de avaliação ====================*/
