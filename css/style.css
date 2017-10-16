@@ -1,0 +1,11 @@
+/*  ====================== CSS responsável pela seção de avaliação ====================*/
+.movie-rating span{
+    color: #05b9ec;
+}
+
+.movie-rating > span:hover{
+    content: "\2605";
+    position: absolute;
+}
+
+/*  ====================== CSS responsável pela seção de avaliação ====================*/
