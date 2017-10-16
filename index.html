@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -15,9 +16,9 @@
         <nav class="menuwrapper__navigation">
             <a href="#" id="menu-responsivo"></a>
             <ul class="navigation">
-                <li class="navigation__item"><a href="#">Buscar</a></li>
-                <li class="navigation__item"><a href="#">Login</a></li>
-                <li class="navigation__item"><a href="#">Cadastrar</a></li>
+                <li class="navigation__item"><a class="navigation__item--anchor" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li class="navigation__item"><a class="navigation__item--anchor" href="#">Login</a></li>
+                <li class="navigation__item"><a class="button-primary" href="#">Cadastrar</a></li>
             </ul>
         </nav>
     </header>
@@ -25,16 +26,22 @@
     <section class="carrousel-movies">
 
         <div class="movie-info">
-            <h2 class="movie-title">Harry Potter</h2>
-            <h3 class="movie-category"Action></h3>
-            <div class="movie-rating">
-                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            <h2 class="movie-title">the jungle book</h2>
+            <div class="moviecategory">
+                <h3 class="moviecategory__value">Action</h3>
+                <h3 class="moviecategory__value">Action</h3>
+                <h3 class="moviecategory__value">Action</h3>
+                <h3 class="moviecategory__value">|</h3>
+                <h3 class="moviecategory__duration">1:30</h3>
+            </div>
+            <div class="movierating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="movierating__decimal">4.8</span>
             </div>
         </div>
 
-        <div class="movie-actions-wrapper">
-            <nav class="movie-actions-menu">
-                <ol>
+        <div class="movieactions">
+            <nav class="movieactions__nav">
+                <ol class="movieactions__nav--list">
                     <li><a href="#"Assistir agora></a></li>
                     <li><a href="#">Informações</a></li>
                     <li><a href="#">Favoritar</a></li>

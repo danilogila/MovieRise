@@ -1,11 +1,204 @@
-/*  ====================== CSS responsável pela seção de avaliação ====================*/
-.movie-rating span{
-    color: #05b9ec;
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+
+*{
+    font-family: 'Open Sans', sans-serif;
 }
 
-.movie-rating > span:hover{
+/*  ====================== CSS responsável pelo menu principal ====================*/
+
+.menuwrapper{
+
+    background: transparent;
+    width: 100%;
+    height: 76px;
+    border-bottom: 1px solid #f1f1f1;
+    z-index: 100;
+    position: fixed;
+}
+
+.menuwrapper__logo{
+    margin: 20px;
+	float: left;
+	width: 200px;
+	height: 40px;
+	background: url(../img/logo.png) no-repeat center;
+	display: block;
+}
+
+.menuwrapper__navigation{
+    float: right;
+    padding: 20px;
+}
+
+#menu-responsivo{
+    display: hidden;
+	width: 40px;
+	height: 40px;
+	background: #4C8FEC url(../img/menu-icon.png) center;
+}
+
+.navigation__item {
+    
+        display: inline-block;
+        float: left;
+        padding: 10px;
+
+    }
+
+.navigation__item--anchor{
+    color: red;
+}
+
+img{
+    width: 100%;
+}
+
+.button-primary{
+    background: #05b9ec;
+    color: white;
+    padding: 12px 30px 12px 30px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+
+/*  ====================== CSS responsável pelo menu principal ====================*/
+
+/*  ====================== CSS responsável pela seção de avaliação ====================*/
+
+.carrousel-movies{
+    padding: 50px 75px 50px 75px;
+    border: 1px solid;
+    height: 500px;
+    background-image: url(../images/foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-end;
+}
+
+.movierating{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    width: 120px;
+}
+
+.movierating span{
+    color: #05b9ec;
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+
+.movierating > span:hover ~ span:before,
+.movierating > span:hover:before{
     content: "\2605";
     position: absolute;
 }
 
+.movie-info{
+    text-align: left;
+    color: white;
+}
+
+.movierating__decimal{
+    float: right;
+    border: 1px solid;
+    padding: 1px 4px 1px 7px;
+    border-radius: 3px;
+}
+
+.movierating__decimal:before,
+.movierating__decimal:hover{
+    content: none!important;
+}
+
+.moviecategory{
+    margin: 10px 10px 20px 0px;
+}
+
+.moviecategory__value{
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.moviecategory__value:last-child::after{
+    padding-right: 10px;
+}
+
+.moviecategory__duration{
+    display: inline-block;
+}
+
+.movie-title{
+    text-transform: uppercase;
+    font-size: 2.2em;
+    color: white;
+}
+
+.movieactions{
+    margin-left: auto;
+    display: inline-block;
+}
+
+.movieactions__nav{
+
+}
+
+.movieactions__nav--list{
+
+}
+
 /*  ====================== CSS responsável pela seção de avaliação ====================*/
+
+/*  ====================== Media Queries ====================*/
+
+@media only screen and (max-width : 640px) {
+    
+        .menuwrapper {
+    
+           
+    
+        }
+    
+        #menu-responsivo {
+    
+            display:inline-block;
+    
+        }
+    
+        .navigation, .menuwrapper__navigation:active .navigation { 
+    
+            display: none;
+            position: absolute;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #444;
+            right: 20px;
+            top: 60px;
+            width: 50%;
+            border-radius: 4px 0 4px 4px;
+    
+        }
+    
+        .navigation__item {
+    
+            text-align: center;
+            width: 100%;
+            padding: 10px 0;
+            margin: 0;
+    
+        }
+    
+        .menuwrapper__navigation:hover .navigation {
+    
+            display: block;
+    
+        }
+    }
