@@ -1,5 +1,8 @@
 /*RESET*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+body{
+    height: 100vh;
+}
 
 *{
     font-family: 'Open Sans', sans-serif;
@@ -85,8 +88,8 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    -webkit-box-shadow: inset 0 0em 3em 1em #191919;
-    box-shadow: inset 0 0em 3em 1em black;
+    -webkit-box-shadow: inset 0 1em 7em 0em #191919;
+    box-shadow: inset 0 1em 7em 0em #191919;
     display: -webkit-flex;
     display: flex;
     align-items: flex-end;
@@ -186,6 +189,66 @@ img{
 
 /*  ====================== CSS responsável pela seção de avaliação ====================*/
 
+/*  ====================== CSS responsável pela section dos filmes e tab ====================*/
+
+main {
+    min-width: 320px;
+    max-width: 1150px;
+    padding: 5px 50px 50px 50px;
+    margin: 0 auto;
+    background: #fff;
+  }
+
+  section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+  }
+  
+  label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+  }
+  
+  input:checked + label::before{
+      content: '\f008 ';
+  }
+
+  label:hover {
+    color: #888;
+    cursor: pointer;
+  }
+  
+  input:checked + label {
+    border-bottom: 2px solid #05b9ec;
+    color: #05b9ec;
+  }
+  
+  #tab1:checked ~ #content1,
+  #tab2:checked ~ #content2,
+  #tab3:checked ~ #content3,
+  #tab4:checked ~ #content4 {
+    display: block;
+  }
+  
+
+/*  ====================== CSS responsável pela section dos filmes e tab ====================*/
+
 /*  ====================== Media Queries ====================*/
 
 @media only screen and (max-width : 640px) {
@@ -230,4 +293,20 @@ img{
             display: block;
     
         }
+
+        @media screen and (max-width: 650px) {
+            label {
+              font-size: 0;
+            }
+            label:before {
+              margin: 0;
+              font-size: 18px;
+            }
+          }
+          
+          @media screen and (max-width: 400px) {
+            label {
+              padding: 15px;
+            }
+          }
     }
