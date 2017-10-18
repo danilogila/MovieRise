@@ -6,6 +6,7 @@ body{
 
 *{
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 /*  ====================== CSS responsável pelo menu principal ====================*/
@@ -88,8 +89,8 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    -webkit-box-shadow: inset 0 -7em 30em 0em #191919;
-    box-shadow: inset 0 -7em 30em 0em #191919;
+    -webkit-box-shadow: inset 0 -7em 30em 0em black;
+    box-shadow: inset 0 -7em 30em 0em black;
     display: -webkit-flex;
     display: flex;
     align-items: flex-end;
@@ -98,14 +99,16 @@ img{
 .movierating{
     unicode-bidi: bidi-override;
     direction: rtl;
-    width: 120px;
+    width: fit-content;
+   
 }
 
-.movierating span{
+.movierating__ratingstar{
     color: #05b9ec;
     display: inline-block;
     position: relative;
     width: 1.1em;
+    padding-top: 2px;
 }
 
 .movierating > span:hover ~ span:before,
@@ -122,8 +125,14 @@ img{
 .movierating__decimal{
     float: right;
     border: 1px solid;
-    padding: 1px 4px 3px 7px;
+    padding: 1px 4px 3px 4px;
     border-radius: 3px;
+    width: 2em;
+    color: #05b9ec;
+    display: inline-block;
+    position: relative;
+    width: 2.1em;
+    margin: 0px 5px 0px 5px;   
 }
 
 .movierating__decimal:before,
@@ -193,10 +202,10 @@ img{
 
 main {
     min-width: 320px;
-    max-width: 1150px;
+    max-width: 1350px;
     padding: 25px 50px 50px 50px;
     margin: 0 auto;
-    background: #fff;
+    background: #f5f7f6;
   }
 
   section {
@@ -243,16 +252,95 @@ main {
   #tab2:checked ~ #content2,
   #tab3:checked ~ #content3,
   #tab4:checked ~ #content4 {
-    display: block;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
   }
 
   .moviewrapper{
-      width: 350px;
-      height: 400px;
-      background: #444;
-      display: inline-block;
+    width: 280px;
+    height: 365px;
+    background: transparent;
+    display: inline-block;
+    margin: 12px;
+  }
+
+  .movieposter{
+    height: inherit;
+  }
+
+  .movieposter__content{
+    height: inherit;
+    border-radius: 7px 7px 0px 0px;
+  }
+
+  .movieinfo{
+    background: white;
+    position: relative;
+    z-index: 100;
+    bottom: 99px;
+    padding: 25px 19px 25px 19px;
+  }
+
+  .movieinfo__rating{
+    display: inline-block;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    width: 100px;
+  }
+
+  .movieinfo__rating--decimal{
+    float: right;
+    border: 1.5px solid;
+    padding: 2px 5px 3px 6px;
+    border-radius: 3px;
+    color: #05b9ec;
+    width: 2.2em;
+  }
+
+  .movieinfo__category{
+      padding: 0px;
+  }
+
+  .movieinfo__category--genre{
+    display: inline-block;
+    color: #05b9ec;
+    font-size: 12px;
+    margin: 8px 5px 5px 0px;
+  }
+
+  .movieinfo__category--genre::after{
+      content: ",";
+  }
+
+ .movieinfo__category--duration{
+    display: inline-block;
+    color: #05b9ec;
+    font-size: 12px;
+ }
+
+  .movieinfo__title{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .movieplay{
+
+  }
+
+  .moviedetails{
+
   }
   
+  .testando{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
 /*  ====================== CSS responsável pela section dos filmes e tab ====================*/
 
