@@ -13,11 +13,14 @@ body{
 
 .menuwrapper{
 
-    background: transparent;
+    background-color: rgba(255,255,255,0);
     width: 100%;
     height: 76px;
     z-index: 100;
     position: fixed;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    transition:.5s;
 }
 
 .menuwrapper__logo{
@@ -256,7 +259,7 @@ main {
     display: -webkit-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     
   }
 
@@ -274,13 +277,12 @@ main {
 
   .movieposter__content{
     height: inherit;
-    border-radius: 7px 7px 0px 0px;
+    border-radius: 4px 4px 0px 0px;
   }
 
   .movieinfo{
     background: white;
     position: relative;
-    z-index: 100;
     bottom: 99px;
     padding: 25px 19px 25px 19px;
   }
@@ -289,7 +291,7 @@ main {
     display: inline-block;
     unicode-bidi: bidi-override;
     direction: rtl;
-    width: 100px;
+    width: min-content;
   }
 
   .movieinfo__rating--decimal{
@@ -343,6 +345,36 @@ main {
   }
 
 /*  ====================== CSS responsável pela section dos filmes e tab ====================*/
+
+/*  ====================== CSS responsável pela seção de inscrição para novidades ====================*/
+
+.subscribesection{
+    display: flex;
+    margin-top: 25px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: url(../images/foto.jpg);
+}
+
+
+.subscribesection__text{
+    font-size: 1.7em;
+    font-weight: 200;
+    color: white;
+    line-height: 40px;
+}
+
+.subscribesection__btn{
+    text-decoration: none;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/*  ====================== CSS responsável pela seção de inscrição para novidades ====================*/
 
 /*  ====================== Media Queries ====================*/
 
