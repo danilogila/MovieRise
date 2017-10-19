@@ -265,10 +265,13 @@ main {
 
   .moviewrapper{
     width: 280px;
-    height: 365px;
+    height: auto;
     background: transparent;
     display: inline-block;
     margin: 12px;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
   }
 
   .movieposter{
@@ -276,15 +279,15 @@ main {
   }
 
   .movieposter__content{
-    height: inherit;
+    height: 350px;
     border-radius: 4px 4px 0px 0px;
   }
 
   .movieinfo{
     background: white;
-    position: relative;
-    bottom: 99px;
     padding: 25px 19px 25px 19px;
+    align-items: flex-end;
+    width: -webkit-fill-available;
   }
 
   .movieinfo__rating{
