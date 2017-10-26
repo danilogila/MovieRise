@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
     <title>MovieRise</title>
 </head>
 <body>
     <header class="menuwrapper">
-        <a class="menuwrapper__logo" href="#">MOVIERise</a>
+        <a class="menuwrapper__logo" href="#"><span class="menuwrapper__logo--left">MOVIE</span>
+            <span class="menuwrapper__logo--right">Rise</span></a>
       
         <nav class="menuwrapper__navigation">
             <a href="#" id="menu-responsivo"></a>
@@ -36,11 +37,11 @@
             </div>
             <div class="movierating">
                 
-                <span class="movierating__ratingstar">☆</span>
-                <span class="movierating__ratingstar">☆</span>
-                <span class="movierating__ratingstar">☆</span>
-                <span class="movierating__ratingstar">☆</span>
-                <span class="movierating__ratingstar">☆</span>
+                <span class="movierating__ratingstar">★</span>
+                <span class="movierating__ratingstar">★</span>
+                <span class="movierating__ratingstar">★</span>
+                <span class="movierating__ratingstar">★</span>
+                <span class="movierating__ratingstar">★</span>
                 <span class="movierating__decimal">4.8</span>
             </div>
         </div>
@@ -58,7 +59,7 @@
 
     </section>
     
-    <main>
+    <main class="main-content">
       
       <input id="tab1" type="radio" name="tabs" checked>
       <label for="tab1">Mais Avaliados</label>
@@ -72,7 +73,7 @@
       <input id="tab4" type="radio" name="tabs">
       <label for="tab4">Genero</label>
         
-      <section id="content1">
+      <section id="content1" class="moviesection">
 
                 <div class="moviewrapper">
                     <picture class="movieposter">
@@ -266,36 +267,686 @@
                         </div>
                 </div>
 
+                <div class="moviewrapper">
+                    <picture class="movieposter">
+                        <img src="images/posters/metropolis.jpg" alt="Poster do filme tal" class="movieposter__content">
+                    </picture>
+            
+                    <div class="movieplay" style="display: none;">
+            
+                    </div>
+            
+                    <div class="movieinfo">
+                            <div class="testando">
+                                <h3 class="movieinfo__title">Metropolis</h3>
+                                <div class="movieinfo__rating">
+                                    <span class="movieinfo__rating--decimal">4.8</span>
+                                </div>
+                            </div>
+                            <div class="movieinfo__category">
+                                <h3 class="movieinfo__category--genre">Action</h3>
+                                <h3 class="movieinfo__category--genre">Sci-Fi</h3>
+                                <h3 class="movieinfo__category--duration">1h 30</h3>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="moviewrapper">
+                    <picture class="movieposter">
+                        <img src="images/posters/regresso.jpg" alt="Poster do filme tal" class="movieposter__content">
+                    </picture>
+            
+                    <div class="movieplay" style="display: none;">
+            
+                    </div>
+            
+                    <div class="movieinfo">
+                            <div class="testando">
+                                <h3 class="movieinfo__title">The Revenant</h3>
+                                <div class="movieinfo__rating">
+                                    <span class="movieinfo__rating--decimal">4.8</span>
+                                </div>
+                            </div>
+                            <div class="movieinfo__category">
+                                <h3 class="movieinfo__category--genre">Action</h3>
+                                <h3 class="movieinfo__category--genre">Suspense</h3>
+                                <h3 class="movieinfo__category--duration">1h 30</h3>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="moviewrapper">
+                    <picture class="movieposter">
+                        <img src="images/posters/watchmen.jpg" alt="Poster do filme tal" class="movieposter__content">
+                    </picture>
+            
+                    <div class="movieplay" style="display: none;">
+            
+                    </div>
+            
+                    <div class="movieinfo">
+                            <div class="testando">
+                                <h3 class="movieinfo__title">Watchmen</h3>
+                                <div class="movieinfo__rating">
+                                    <span class="movieinfo__rating--decimal">4.8</span>
+                                </div>
+                            </div>
+                            <div class="movieinfo__category">
+                                <h3 class="movieinfo__category--genre">Action</h3>
+                                <h3 class="movieinfo__category--genre">Drama</h3>
+                                <h3 class="movieinfo__category--duration">1h 30</h3>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="moviewrapper">
+                    <picture class="movieposter">
+                        <img src="images/posters/star-wars.jpg" alt="Poster do filme tal" class="movieposter__content">
+                    </picture>
+            
+                    <div class="movieplay" style="display: none;">
+            
+                    </div>
+            
+                    <div class="movieinfo">
+                            <div class="testando">
+                                <h3 class="movieinfo__title">Star Wars: Last Jedi</h3>
+                                <div class="movieinfo__rating">
+                                    <span class="movieinfo__rating--decimal">4.8</span>
+                                </div>
+                            </div>
+                            <div class="movieinfo__category">
+                                <h3 class="movieinfo__category--genre">Action</h3>
+                                <h3 class="movieinfo__category--genre">Sci-Fi</h3>
+                                <h3 class="movieinfo__category--duration">1h 30</h3>
+                            </div>
+                    </div>
+                </div>
+
         
       </section>
         
-      <section id="content2">
-        <div style="background: violet;" class="moviewrapper">
-            
+      <section id="content2" class="moviesection">
+        <div class="moviewrapper">
+            <picture class="movieposter">
+                <img src="images/posters/kumiko.jpg" alt="Poster do filme Kumiko" class="movieposter__content">
+            </picture>
+
+            <div class="movieplay" style="display: none;">
+
+            </div>
+
+            <div class="movieinfo">
+                <div class="testando">
+                    <h3 class="movieinfo__title">Kumiko</h3>
+                    <div class="movieinfo__rating">
+                        <span class="movieinfo__rating--decimal">4.2</span>
+                    </div>
+                </div>
+                <div class="movieinfo__category">
+                    <h3 class="movieinfo__category--genre">Ação</h3>
+                    <h3 class="movieinfo__category--genre">Animação</h3>
+                    <h3 class="movieinfo__category--duration">1h 20</h3>
+                </div>
+            </div>
         </div>
 
-        <div style="background: orange;" class="moviewrapper">
-            
+        <div class="moviewrapper">
+                <picture class="movieposter">
+                    <img src="images/posters/rules.jpg" alt="Poster do filme Vivendo a vida adoidado" class="movieposter__content">
+                </picture>
+    
+                <div class="movieplay" style="display: none;">
+    
+                </div>
+
+            <div class="movieinfo">
+                <div class="testando">
+                    <h3 class="movieinfo__title">Curtindo a Vida Adoidado</h3>
+                    <div class="movieinfo__rating">
+                        <span class="movieinfo__rating--decimal">4.9</span>
+                    </div>
+                </div>
+                <div class="movieinfo__category">
+                    <h3 class="movieinfo__category--genre">Comedia</h3>
+                    <h3 class="movieinfo__category--genre">Romance</h3>
+                    <h3 class="movieinfo__category--duration">1h 50</h3>
+                </div>
+            </div>
         </div>
 
-        <div style="background: tomato;" class="moviewrapper">
+        <div class="moviewrapper">
+                <picture class="movieposter">
+                    <img src="images/posters/rogue-one.jpg" alt="Poster do filme Star Wars - ROgue One" class="movieposter__content">
+                </picture>
+    
+                <div class="movieplay" style="display: none;">
+    
+                </div>
+
+            <div class="movieinfo">
+                <div class="testando">
+                    <h3 class="movieinfo__title">Star Wars - Rogue One</h3>
+                    <div class="movieinfo__rating">
+                        <span class="movieinfo__rating--decimal">4.2</span>
+                    </div>
+                </div>
+                <div class="movieinfo__category">
+                    <h3 class="movieinfo__category--genre">Ação</h3>
+                    <h3 class="movieinfo__category--genre">Sci-Fi</h3>
+                    <h3 class="movieinfo__category--duration">2h 30</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="moviewrapper">
+            <picture class="movieposter">
+                <img src="images/posters/valerianpost.jpg" alt="Poster do filme Valerian e a cidade dos mil planetas" class="movieposter__content">
+            </picture>
+    
+            <div class="movieplay" style="display: none;">
+    
+            </div>
+    
+            <div class="movieinfo">
+                    <div class="testando">
+                        <h3 class="movieinfo__title">Valerian e a cidade dos mil planetas</h3>
+                        <div class="movieinfo__rating">
+                            <span class="movieinfo__rating--decimal">2.8</span>
+                        </div>
+                    </div>
+                    <div class="movieinfo__category">
+                        <h3 class="movieinfo__category--genre">Ação</h3>
+                        <h3 class="movieinfo__category--genre">Sci-Fi</h3>
+                        <h3 class="movieinfo__category--duration">2h 30</h3>
+                    </div>
+            </div>
+        </div>
+
+        <div class="moviewrapper">
+                <picture class="movieposter">
+                    <img src="images/posters/lordwar.jpg" alt="Poster do filme O Senhor das Armas" class="movieposter__content">
+                </picture>
+        
+                <div class="movieplay" style="display: none;">
+        
+                </div>
+        
+                <div class="movieinfo">
+                        <div class="testando">
+                            <h3 class="movieinfo__title">O Senhor das Armas</h3>
+                            <div class="movieinfo__rating">
+                                <span class="movieinfo__rating--decimal">4.1</span>
+                            </div>
+                        </div>
+                        <div class="movieinfo__category">
+                            <h3 class="movieinfo__category--genre">Ação</h3>
+                            <h3 class="movieinfo__category--genre">Drama</h3>
+                            <h3 class="movieinfo__category--duration">1h 50</h3>
+                        </div>
+                </div>
+        </div>
+
+        <div class="moviewrapper">
+                <picture class="movieposter">
+                    <img src="images/posters/tarzan.jpg" alt="Poster do filme Tarzan" class="movieposter__content">
+                </picture>
+        
+                <div class="movieplay" style="display: none;">
+        
+                </div>
+        
+                <div class="movieinfo">
+                        <div class="testando">
+                            <h3 class="movieinfo__title">Tarzan</h3>
+                            <div class="movieinfo__rating">
+                                <span class="movieinfo__rating--decimal">4.2</span>
+                            </div>
+                        </div>
+                        <div class="movieinfo__category">
+                            <h3 class="movieinfo__category--genre">Drama</h3>
+                            <h3 class="movieinfo__category--genre">Ação</h3>
+                            <h3 class="movieinfo__category--duration">2h 35</h3>
+                        </div>
+                </div>
+        </div>
+
+        <div class="moviewrapper">
+                <picture class="movieposter">
+                    <img src="images/posters/galaxy.jpg" alt="Poster do filme Guardiões das Galaxias - Vol 2" class="movieposter__content">
+                </picture>
+        
+                <div class="movieplay" style="display: none;">
+        
+                </div>
+        
+                <div class="movieinfo">
+                        <div class="testando">
+                            <h3 class="movieinfo__title">Guardiões das Galaxias - Vol 2</h3>
+                            <div class="movieinfo__rating">
+                                <span class="movieinfo__rating--decimal">4.4</span>
+                            </div>
+                        </div>
+                        <div class="movieinfo__category">
+                            <h3 class="movieinfo__category--genre">Ação</h3>
+                            <h3 class="movieinfo__category--genre">Aventura</h3>
+                            <h3 class="movieinfo__category--duration">2h 40</h3>
+                        </div>
+                </div>
+        </div>
+
+        <div class="moviewrapper">
+                <picture class="movieposter">
+                    <img src="images/posters/incriveis.jpg" alt="Poster do filme Os Incriveis" class="movieposter__content">
+                </picture>
+        
+                <div class="movieplay" style="display: none;">
+        
+                </div>
+        
+                <div class="movieinfo">
+                        <div class="testando">
+                            <h3 class="movieinfo__title">Os Incriveis</h3>
+                            <div class="movieinfo__rating">
+                                <span class="movieinfo__rating--decimal">4.9</span>
+                            </div>
+                        </div>
+                        <div class="movieinfo__category">
+                            <h3 class="movieinfo__category--genre">Animação</h3>
+                            <h3 class="movieinfo__category--genre">Ação</h3>
+                            <h3 class="movieinfo__category--duration">2h 20</h3>
+                        </div>
+                </div>
+        </div>
+
+        <div class="moviewrapper">
+            <picture class="movieposter">
+                <img src="images/posters/Her.jpg" alt="Poster do filme Her" class="movieposter__content">
+            </picture>
+    
+            <div class="movieplay" style="display: none;">
+    
+            </div>
+    
+            <div class="movieinfo">
+                    <div class="testando">
+                        <h3 class="movieinfo__title">Her</h3>
+                        <div class="movieinfo__rating">
+                            <span class="movieinfo__rating--decimal">4.3</span>
+                        </div>
+                    </div>
+                    <div class="movieinfo__category">
+                        <h3 class="movieinfo__category--genre">Drama</h3>
+                        <h3 class="movieinfo__category--genre">Romance</h3>
+                        <h3 class="movieinfo__category--duration">2h 30</h3>
+                    </div>
+            </div>
+        </div>
+
+        <div class="moviewrapper">
+            <picture class="movieposter">
+                <img src="images/posters/hunger-games.jpg" alt="Poster do filme Jogos Vorazes" class="movieposter__content">
+            </picture>
+    
+            <div class="movieplay" style="display: none;">
+    
+            </div>
+    
+            <div class="movieinfo">
+                    <div class="testando">
+                        <h3 class="movieinfo__title">Jogos Vorazes</h3>
+                        <div class="movieinfo__rating">
+                            <span class="movieinfo__rating--decimal">4.1</span>
+                        </div>
+                    </div>
+                    <div class="movieinfo__category">
+                        <h3 class="movieinfo__category--genre">Ação</h3>
+                        <h3 class="movieinfo__category--genre">Suspense</h3>
+                        <h3 class="movieinfo__category--duration">2h 30</h3>
+                    </div>
+            </div>
+        </div>
+
+        <div class="moviewrapper">
+            <picture class="movieposter">
+                <img src="images/posters/themartian.jpg" alt="Poster do filme O Marciano" class="movieposter__content">
+            </picture>
+    
+            <div class="movieplay" style="display: none;">
+    
+            </div>
+    
+            <div class="movieinfo">
+                    <div class="testando">
+                        <h3 class="movieinfo__title">O Marciano</h3>
+                        <div class="movieinfo__rating">
+                            <span class="movieinfo__rating--decimal">4.0</span>
+                        </div>
+                    </div>
+                    <div class="movieinfo__category">
+                        <h3 class="movieinfo__category--genre">Sci-Fi</h3>
+                        <h3 class="movieinfo__category--genre">Drama</h3>
+                        <h3 class="movieinfo__category--duration">2h 35</h3>
+                    </div>
+            </div>
+        </div>
+
+        <div class="moviewrapper">
+            <picture class="movieposter">
+                <img src="images/posters/gijoe.jpg" alt="Poster do filme G.I Joe - Retaliação" class="movieposter__content">
+            </picture>
+    
+            <div class="movieplay" style="display: none;">
+    
+            </div>
+    
+            <div class="movieinfo">
+                    <div class="testando">
+                        <h3 class="movieinfo__title">G.I Joe - Retaliação</h3>
+                        <div class="movieinfo__rating">
+                            <span class="movieinfo__rating--decimal">3.2</span>
+                        </div>
+                    </div>
+                    <div class="movieinfo__category">
+                        <h3 class="movieinfo__category--genre">Action</h3>
+                        <h3 class="movieinfo__category--genre">Sci-Fi</h3>
+                        <h3 class="movieinfo__category--duration">2h 40</h3>
+                    </div>
+            </div>
+        </div>
       </section>
         
-      <section id="content3">
-        <div style="background: green;" class="moviewrapper">
-            
+      <section id="content3" class="moviesection">
+        <div class="moviewrapper">
+            <picture class="movieposter">
+                <img src="images/posters/doctor-strange.jpg" alt="Poster do filme tal" class="movieposter__content">
+            </picture>
+
+            <div class="movieplay" style="display: none;">
+
+            </div>
+
+            <div class="movieinfo">
+                <div class="testando">
+                    <h3 class="movieinfo__title">Doctor Strange</h3>
+                    <div class="movieinfo__rating">
+                        <span class="movieinfo__rating--decimal">4.8</span>
+                    </div>
+                </div>
+                <div class="movieinfo__category">
+                    <h3 class="movieinfo__category--genre">Action</h3>
+                    <h3 class="movieinfo__category--genre">Action</h3>
+                    <h3 class="movieinfo__category--duration">1h 30</h3>
+                </div>
+            </div>
         </div>
 
-        <div style="background: red;" class="moviewrapper">
-            
+        <div class="moviewrapper">
+                <picture class="movieposter">
+                    <img src="images/posters/blade-runner.jpg" alt="Poster do filme tal" class="movieposter__content">
+                </picture>
+    
+                <div class="movieplay" style="display: none;">
+    
+                </div>
+
+            <div class="movieinfo">
+                <div class="testando">
+                    <h3 class="movieinfo__title">Blade Runner 2048</h3>
+                    <div class="movieinfo__rating">
+                        <span class="movieinfo__rating--decimal">4.8</span>
+                    </div>
+                </div>
+                <div class="movieinfo__category">
+                    <h3 class="movieinfo__category--genre">Action</h3>
+                    <h3 class="movieinfo__category--genre">Action</h3>
+                    <h3 class="movieinfo__category--duration">1h 30</h3>
+                </div>
+            </div>
         </div>
 
-        <div style="background: blue;" class="moviewrapper">
-            
+        <div class="moviewrapper">
+                <picture class="movieposter">
+                    <img src="images/posters/moana.jpg" alt="Poster do filme tal" class="movieposter__content">
+                </picture>
+    
+                <div class="movieplay" style="display: none;">
+    
+                </div>
+
+            <div class="movieinfo">
+                <div class="testando">
+                    <h3 class="movieinfo__title">Moana</h3>
+                    <div class="movieinfo__rating">
+                        <span class="movieinfo__rating--decimal">4.8</span>
+                    </div>
+                </div>
+                <div class="movieinfo__category">
+                    <h3 class="movieinfo__category--genre">Action</h3>
+                    <h3 class="movieinfo__category--genre">Action</h3>
+                    <h3 class="movieinfo__category--duration">1h 30</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="moviewrapper">
+            <picture class="movieposter">
+                <img src="images/posters/mad-max.jpg" alt="Poster do filme tal" class="movieposter__content">
+            </picture>
+    
+            <div class="movieplay" style="display: none;">
+    
+            </div>
+    
+            <div class="movieinfo">
+                    <div class="testando">
+                        <h3 class="movieinfo__title">Mad Max - Fury Road</h3>
+                        <div class="movieinfo__rating">
+                            <span class="movieinfo__rating--decimal">4.8</span>
+                        </div>
+                    </div>
+                    <div class="movieinfo__category">
+                        <h3 class="movieinfo__category--genre">Action</h3>
+                        <h3 class="movieinfo__category--genre">Action</h3>
+                        <h3 class="movieinfo__category--duration">1h 30</h3>
+                    </div>
+            </div>
+        </div>
+
+        <div class="moviewrapper">
+                <picture class="movieposter">
+                    <img src="images/posters/harry-potter.jpg" alt="Poster do filme tal" class="movieposter__content">
+                </picture>
+        
+                <div class="movieplay" style="display: none;">
+        
+                </div>
+        
+                <div class="movieinfo">
+                        <div class="testando">
+                            <h3 class="movieinfo__title">Harry Potter 3</h3>
+                            <div class="movieinfo__rating">
+                                <span class="movieinfo__rating--decimal">4.8</span>
+                            </div>
+                        </div>
+                        <div class="movieinfo__category">
+                            <h3 class="movieinfo__category--genre">Action</h3>
+                            <h3 class="movieinfo__category--genre">Action</h3>
+                            <h3 class="movieinfo__category--duration">1h 30</h3>
+                        </div>
+                </div>
+        </div>
+
+        <div class="moviewrapper">
+                <picture class="movieposter">
+                    <img src="images/posters/interstellar.jpg" alt="Poster do filme tal" class="movieposter__content">
+                </picture>
+        
+                <div class="movieplay" style="display: none;">
+        
+                </div>
+        
+                <div class="movieinfo">
+                        <div class="testando">
+                            <h3 class="movieinfo__title">Interstellar</h3>
+                            <div class="movieinfo__rating">
+                                <span class="movieinfo__rating--decimal">4.8</span>
+                            </div>
+                        </div>
+                        <div class="movieinfo__category">
+                            <h3 class="movieinfo__category--genre">Action</h3>
+                            <h3 class="movieinfo__category--genre">Action</h3>
+                            <h3 class="movieinfo__category--duration">1h 30</h3>
+                        </div>
+                </div>
+        </div>
+
+        <div class="moviewrapper">
+                <picture class="movieposter">
+                    <img src="images/posters/moonlight.jpg" alt="Poster do filme tal" class="movieposter__content">
+                </picture>
+        
+                <div class="movieplay" style="display: none;">
+        
+                </div>
+        
+                <div class="movieinfo">
+                        <div class="testando">
+                            <h3 class="movieinfo__title">Moonlight</h3>
+                            <div class="movieinfo__rating">
+                                <span class="movieinfo__rating--decimal">4.8</span>
+                            </div>
+                        </div>
+                        <div class="movieinfo__category">
+                            <h3 class="movieinfo__category--genre">Action</h3>
+                            <h3 class="movieinfo__category--genre">Action</h3>
+                            <h3 class="movieinfo__category--duration">1h 30</h3>
+                        </div>
+                </div>
+        </div>
+
+        <div class="moviewrapper">
+                <picture class="movieposter">
+                    <img src="images/posters/2001-movie.jpg" alt="Poster do filme tal" class="movieposter__content">
+                </picture>
+        
+                <div class="movieplay" style="display: none;">
+        
+                </div>
+        
+                <div class="movieinfo">
+                        <div class="testando">
+                            <h3 class="movieinfo__title">2001: A Space Odissey</h3>
+                            <div class="movieinfo__rating">
+                                <span class="movieinfo__rating--decimal">4.8</span>
+                            </div>
+                        </div>
+                        <div class="movieinfo__category">
+                            <h3 class="movieinfo__category--genre">Action</h3>
+                            <h3 class="movieinfo__category--genre">Action</h3>
+                            <h3 class="movieinfo__category--duration">1h 30</h3>
+                        </div>
+                </div>
+        </div>
+
+        <div class="moviewrapper">
+            <picture class="movieposter">
+                <img src="images/posters/metropolis.jpg" alt="Poster do filme tal" class="movieposter__content">
+            </picture>
+    
+            <div class="movieplay" style="display: none;">
+    
+            </div>
+    
+            <div class="movieinfo">
+                    <div class="testando">
+                        <h3 class="movieinfo__title">Metropolis</h3>
+                        <div class="movieinfo__rating">
+                            <span class="movieinfo__rating--decimal">4.8</span>
+                        </div>
+                    </div>
+                    <div class="movieinfo__category">
+                        <h3 class="movieinfo__category--genre">Action</h3>
+                        <h3 class="movieinfo__category--genre">Sci-Fi</h3>
+                        <h3 class="movieinfo__category--duration">1h 30</h3>
+                    </div>
+            </div>
+        </div>
+
+        <div class="moviewrapper">
+            <picture class="movieposter">
+                <img src="images/posters/regresso.jpg" alt="Poster do filme tal" class="movieposter__content">
+            </picture>
+    
+            <div class="movieplay" style="display: none;">
+    
+            </div>
+    
+            <div class="movieinfo">
+                    <div class="testando">
+                        <h3 class="movieinfo__title">The Revenant</h3>
+                        <div class="movieinfo__rating">
+                            <span class="movieinfo__rating--decimal">4.8</span>
+                        </div>
+                    </div>
+                    <div class="movieinfo__category">
+                        <h3 class="movieinfo__category--genre">Action</h3>
+                        <h3 class="movieinfo__category--genre">Suspense</h3>
+                        <h3 class="movieinfo__category--duration">1h 30</h3>
+                    </div>
+            </div>
+        </div>
+
+        <div class="moviewrapper">
+            <picture class="movieposter">
+                <img src="images/posters/watchmen.jpg" alt="Poster do filme tal" class="movieposter__content">
+            </picture>
+    
+            <div class="movieplay" style="display: none;">
+    
+            </div>
+    
+            <div class="movieinfo">
+                    <div class="testando">
+                        <h3 class="movieinfo__title">Watchmen</h3>
+                        <div class="movieinfo__rating">
+                            <span class="movieinfo__rating--decimal">4.8</span>
+                        </div>
+                    </div>
+                    <div class="movieinfo__category">
+                        <h3 class="movieinfo__category--genre">Action</h3>
+                        <h3 class="movieinfo__category--genre">Drama</h3>
+                        <h3 class="movieinfo__category--duration">1h 30</h3>
+                    </div>
+            </div>
+        </div>
+
+        <div class="moviewrapper">
+            <picture class="movieposter">
+                <img src="images/posters/star-wars.jpg" alt="Poster do filme tal" class="movieposter__content">
+            </picture>
+    
+            <div class="movieplay" style="display: none;">
+    
+            </div>
+    
+            <div class="movieinfo">
+                    <div class="testando">
+                        <h3 class="movieinfo__title">Star Wars: Last Jedi</h3>
+                        <div class="movieinfo__rating">
+                            <span class="movieinfo__rating--decimal">4.8</span>
+                        </div>
+                    </div>
+                    <div class="movieinfo__category">
+                        <h3 class="movieinfo__category--genre">Action</h3>
+                        <h3 class="movieinfo__category--genre">Sci-Fi</h3>
+                        <h3 class="movieinfo__category--duration">1h 30</h3>
+                    </div>
+            </div>
         </div>
       </section>
         
-      <section id="content4">
+      <section id="content4" class="moviesection">
         <p>
           Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin turkey rump ball tip sirloin frankfurter meatloaf boudin brisket ham hock. Hamburger venison brisket tri-tip andouille pork belly ball tip short ribs biltong meatball chuck. Pork chop ribeye tail short ribs, beef hamburger meatball kielbasa rump corned beef porchetta landjaeger flank. Doner rump frankfurter meatball meatloaf, cow kevin pork pork loin venison fatback spare ribs salami beef ribs.
         </p>
@@ -310,11 +961,23 @@
                 <button type="button" class="button-primary subscribesection__btn">Inscreva-se</button>
           </div>
       </section>
+
+      <button class="buttonload">
+        <i class="fa fa-spinner fa-spin buttonload__spin"></i>Loading
+      </button>
         
     </main>
+
+    <footer class="footer-wrapper">
+        <div class="copyright">
+            © 1993.2015 MovieRise CO. LTD. All rights Reserved
+        </div>
+    </footer>
+
     <script src="https://use.fontawesome.com/852d9658e9.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="js/efeito-menu.js"></script>
+    
 </body>
 
 </html>

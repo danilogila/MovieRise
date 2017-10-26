@@ -25,11 +25,22 @@ body{
 
 .menuwrapper__logo{
     margin: 20px;
-	float: left;
-	width: 200px;
-	height: 40px;
-	background: url(../img/logo.png) no-repeat center;
-	display: block;
+    float: left;
+    width: 151px;
+    color: white;
+    display: inline-flex;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.menuwrapper__logo--left{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menuwrapper__logo--right{
+    font-weight: 100;
+    text-transform: uppercase;
 }
 
 .menuwrapper__navigation{
@@ -102,7 +113,7 @@ img{
 .movierating{
     unicode-bidi: bidi-override;
     direction: rtl;
-    width: fit-content;
+    max-width: 150px;
    
 }
 
@@ -203,7 +214,7 @@ img{
 
 /*  ====================== CSS responsável pela section dos filmes e tab ====================*/
 
-main {
+.main-content{
     min-width: 320px;
     max-width: 1350px;
     padding: 25px 50px 50px 50px;
@@ -211,7 +222,7 @@ main {
     background: #f5f7f6;
   }
 
-  section {
+  .moviesection {
     display: none;
     padding: 20px 0 0;
     border-top: 1px solid #ddd;
@@ -259,12 +270,12 @@ main {
     display: -webkit-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     
   }
 
   .moviewrapper{
-    width: 280px;
+    width: 265px;
     height: auto;
     background: transparent;
     display: inline-block;
@@ -276,18 +287,26 @@ main {
 
   .movieposter{
     height: inherit;
+    width: inherit;
   }
 
   .movieposter__content{
-    height: 350px;
+    height: 365px;
     border-radius: 4px 4px 0px 0px;
   }
 
   .movieinfo{
     background: white;
-    padding: 25px 19px 25px 19px;
+    padding: 21px 19px 21px 19px;
     align-items: flex-end;
     width: -webkit-fill-available;
+    width: -moz-available;
+    position: relative;
+    bottom: 87px;
+    margin-bottom: -85px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(220,220,220,0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(220,220,220,0.75);
+    box-shadow: 0px 1px 5px 0px rgba(220,220,220,0.75);
   }
 
   .movieinfo__rating{
@@ -313,8 +332,9 @@ main {
   .movieinfo__category--genre{
     display: inline-block;
     color: #05b9ec;
-    font-size: 12px;
-    margin: 8px 5px 5px 0px;
+    font-size: 0.7rem;
+    margin: 0px 5px 5px 0px;
+    font-weight: 700;
   }
 
   .movieinfo__category--genre::after{
@@ -324,7 +344,8 @@ main {
  .movieinfo__category--duration{
     display: inline-block;
     color: #05b9ec;
-    font-size: 12px;
+    font-weight: 700;
+    font-size: 0.7rem;
  }
 
   .movieinfo__title{
@@ -388,6 +409,38 @@ main {
 }
 
 /*  ====================== CSS responsável pela seção de inscrição para novidades ====================*/
+/*  ================================ CSS responsável pela footer da página ===========================*/
+
+.footer-wrapper{
+
+}
+
+.copyright{
+    text-align: center;
+    padding: 30px;
+}
+
+/*  ================================ CSS responsável pela footer da página ===========================*/
+/*  ====================== Animações ====================*/
+.buttonload {
+    background-color: transparent;
+    border: none;
+    color: #05b9ec;
+    padding: 12px 24px;
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 36px;
+}
+
+.buttonload__spin{
+    margin-right: 10px;
+}
+
+
+
+
+/*  ====================== Animações ====================*/
 
 /*  ====================== Media Queries ====================*/
 
