@@ -99,15 +99,27 @@ img{
 .carrousel-movies{
     padding: 50px 75px 50px 75px;
     height: 500px;
-    background-image: url(../images/foto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: initial;
     -webkit-box-shadow: inset 0 -7em 30em 0em black;
     box-shadow: inset 0 -7em 30em 0em black;
     display: -webkit-flex;
     display: flex;
     align-items: flex-end;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.firstmoviebg{
+    
+}
+
+.secondmoviebg{
+    background-image: url(../images/dunkirk.jpg);
+}
+
+.thirdmoviebg{
+    background-image: url(../images/antman.jpg);
 }
 
 .movierating{
@@ -189,7 +201,7 @@ img{
 }
 
 .movieactions__nav--list{
-
+    display: inline-flex;
 }
 
 .actionsusers{
