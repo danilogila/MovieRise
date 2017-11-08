@@ -197,6 +197,10 @@ img{
 .movieactions{
     margin-left: auto;
     width: 350px;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    align-items: center;
 }
 
 .movieactions__nav{
@@ -204,7 +208,8 @@ img{
 }
 
 .movieactions__nav--list{
-    display: inline-flex;
+    display: flex;
+    align-items: center;
 }
 
 .actionsusers{
@@ -215,11 +220,7 @@ img{
     display: inline-block;
 }
 
-.actionsusers:last-child::before{
-    content: "+";
-    font-size: 15px;
-    color: white;
-}
+
 
 .actionsusers a:last-child{
     color: inherit;
@@ -512,6 +513,10 @@ img{
 
 .buttonload__spin{
     margin-right: 10px;
+}
+
+.fa-heart:hover{
+    color: red;
 }
 
 /*  ====================== Animações ====================*/
