@@ -108,9 +108,11 @@ img{
 }
 
 .moviebg{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: initial;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
     image-rendering: -webkit-optimize-contrast;
     background-image: url(../images/foto.jpg);
 }
@@ -225,6 +227,27 @@ img{
     font-size: 0.9em;
 }
 
+.rslides_nav{
+    display: block;
+    width: 32px;
+    height: 60px;
+    position: absolute;
+    top: 35%;
+    z-index: 2;
+}
+
+.next{
+    background-image: url(../images/arrow-right.PNG);
+    right: 0px;
+    top: 35%;
+}
+
+.prev{
+    background-image: url(../images/arrow-left.PNG);
+    left: 0px;
+    top: 35%;
+}
+
 /*  ====================== CSS responsável pela seção de avaliação ====================*/
 
 /*  ====================== CSS responsável pela section dos filmes e tab ====================*/
@@ -290,20 +313,13 @@ img{
   }
 
   .moviewrapper{
-    width: 235px;
+    width: 280px;
     height: 361px;
     background: transparent;
-    /* display: inline-block; */
-    margin: 20px;
-    /* display: flex; */
-    /* display: -webkit-flex; */
-    /* flex-wrap: wrap; */
-    /* position: relative; */
+    margin: 25px 15px 25px 15px;
   }
 
   .movieposter{
-        /* height: inherit; */
-    /* width: inherit; */
   }
 
   .movieposter__content{
@@ -315,10 +331,8 @@ img{
   .movieinfo{
     background: white;
     padding: 21px 19px 21px 19px;
-    /* align-items: flex-end; */
     width: -webkit-fill-available;
     width: -moz-available;
-    /* position: relative; */
     bottom: 87px;
     margin-bottom: -85px;
     -webkit-box-shadow: 0px 1px 5px 0px rgba(220,220,220,0.75);
@@ -349,9 +363,9 @@ img{
   .movieinfo__category--genre{
     display: inline-block;
     color: #05b9ec;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin: 0px 5px 5px 0px;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   .movieinfo__category--genre::after{
@@ -440,10 +454,50 @@ img{
 
 .copyright{
     text-align: center;
-    padding: 30px;
+    padding: 30px 0px 30px 30px;
+    width: 300px;
 }
 
 /*  ================================ CSS responsável pela footer da página ===========================*/
+
+.menuwrapper__logo__bottom{
+    margin: 20px;
+    width: 151px;
+    color: #5fc1e3;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.menuwrapper__logo__bottom--left{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menuwrapper__logo__bottom--right{
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.footer-wrapper{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.navfooterlist{
+    display: inline-flex;
+}
+
+.navfooterlist__item{
+    margin: 0px 5px 0px 5px;
+}
+
+.navfooterlist__item--anchor{
+    text-decoration: none;
+}
 /*  ====================== Animações ====================*/
 .buttonload {
     background-color: transparent;
@@ -459,9 +513,6 @@ img{
 .buttonload__spin{
     margin-right: 10px;
 }
-
-
-
 
 /*  ====================== Animações ====================*/
 
@@ -523,6 +574,53 @@ img{
           @media screen and (max-width: 400px) {
             label {
               padding: 15px;
+            }
+          }
+
+          @media screen and (min-width: 530px){
+            .moviewrapper{
+                width: 350px;
+                margin: 20px 15px;
+            }
+          }
+
+          @media screen and (max-width: 750px){
+            .carrousel-movies{
+                display: -webkit-flex;
+                display: flex;
+                -webkit-align-items: center;
+                align-items: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 50px 20px 50px 20px;
+                height: 400px;
+            }
+
+            .movieactions{
+                margin-left: auto;
+                width: auto;
+                margin-right: auto;
+            }
+
+            .moviecategory{
+                margin: 10px 0px 10px 0px;
+                text-align: center;
+            }
+
+            .movie-title{
+                text-transform: uppercase;
+                font-size: 2.2em;
+                color: white;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .movierating{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+                margin-bottom: 20px;
             }
           }
     }
