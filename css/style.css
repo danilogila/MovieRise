@@ -52,7 +52,8 @@ body{
     display: hidden;
 	width: 40px;
 	height: 40px;
-	background: #4C8FEC url(../img/menu-icon.png) center;
+    background: url(../images/menu.png) center;
+    background-repeat: no-repeat;
 }
 
 .navigation__item {
@@ -500,20 +501,6 @@ img{
     text-decoration: none;
 }
 /*  ====================== Animações ====================*/
-.buttonload {
-    background-color: transparent;
-    border: none;
-    color: #05b9ec;
-    padding: 12px 24px;
-    font-size: 20px;
-    margin: 0 auto;
-    display: block;
-    margin-top: 36px;
-}
-
-.buttonload__spin{
-    margin-right: 10px;
-}
 
 .fa-heart:hover{
     color: red;
@@ -574,6 +561,10 @@ img{
               margin: 0;
               font-size: 18px;
             }
+
+            .main-content{
+                padding: 25px 15px 50px 15px;
+            }
           }
           
           @media screen and (max-width: 400px) {
@@ -586,6 +577,22 @@ img{
             .moviewrapper{
                 width: 350px;
                 margin: 20px 15px;
+            }
+
+            .footer-wrapper{
+                flex-direction: column;
+            }
+          }
+
+          @media screen and (max-width: 530px){
+
+            .footer-wrapper{
+                flex-direction: column;
+                font-size: 20px;
+            }
+
+            .copyright {
+                padding: 20px 0px 20px 0px;
             }
           }
 
