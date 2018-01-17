@@ -512,10 +512,8 @@ img{
 
 @media only screen and (max-width : 640px) {
     
-        .menuwrapper {
-    
-           
-    
+        .button-primary{
+            padding: 5px 15px 5px 15px;
         }
     
         #menu-responsivo {
@@ -536,6 +534,10 @@ img{
             width: 50%;
             border-radius: 4px 0 4px 4px;
     
+        }
+
+        .navigation__item--anchor{
+            color: black;
         }
     
         .navigation__item {
