@@ -315,6 +315,7 @@ img{
   }
 
   .moviewrapper{
+    position: relative;
     width: 280px;
     height: 361px;
     background: transparent;
@@ -388,17 +389,26 @@ img{
   }
 
   .movieplay{
-    width: fit-content;
-    height: 285px;
-    position: absolute;
-    pointer-events: none;
-    border-radius: 4px 4px 0px 0px;
-    transition: background-color .2s ease-in;
+        width: inherit;
+        height: 273px;
+        position: absolute;
+        pointer-events: none;
+        border-radius: 4px 4px 0px 0px;
+        -webkit-transition: 0.8s linear; 
+        -moz-transition: 0.8s linear; 
+        -o-transition: 0.8s linear;
+        background-color: red;
+        z-index: 100;
+        top: 0px;
+        display: none;
     
   }
   .movieposter:hover + .movieplay{
     display: block;
     background-color: rgba(0,0,0,0.75);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
   }
   
   .testando{
