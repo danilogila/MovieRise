@@ -69,6 +69,10 @@ body{
     text-decoration: none;
 }
 
+.search-txt{
+    display: none;
+}
+
 img{
     width: 100%;
 }
@@ -594,6 +598,15 @@ img{
     
         }
 
+        .search-txt{
+            display: block;
+        }
+
+        .search-icon, .fa-search{
+            display: none!important;
+            visibility: hidden;
+        }
+    }
         @media screen and (max-width: 650px) {
             label {
               font-size: 0;
@@ -676,4 +689,3 @@ img{
                 margin-bottom: 20px;
             }
           }
-    }
