@@ -629,7 +629,7 @@ img{
 
           @media screen and (min-width: 530px){
             .moviewrapper{
-                width: 350px;
+                max-width: 350px;
                 margin: 20px 15px;
             }
 
